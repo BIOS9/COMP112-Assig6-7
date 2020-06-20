@@ -1,0 +1,42 @@
+/* Reflection.txt for COMP112 - 2018T1, Assignment 6
+ * Name: Matthew Corfiatis
+ * Username: CorfiaMatt
+ * ID: 300447277
+ */
+
+Questions for Reflection.
+=========================
+
+1. Briefly list the features that you implemented in your Chat Client.
+
+
+2. Describe how you tested your program, and discuss how much confidence you have
+that your testing shows that the program works correctly. 
+
+
+Answers for Reflection.
+========================
+
+* Asynchronous callback architecture
+* Separate tabs for different private chats and server
+* GUI window to enter username, nickname and realname
+* Quick access buttons on the side of the window for basic commands
+* List window that opens when server sends a channel list, and displays the channels with the users
+* Window to ask for nickname for private message or channel name for channel joining
+* Coloured text formatting
+* Command manager for easy implementation handling commands from both the server and client
+* Prints errors to window so they can be easily viewed.
+
+
+I tested my program by connecting to and using the "irc.ecs.vuw.ac.nz" IRC server. I ran through many different actions such as:
+* messaging individual users
+* messaging channels
+* messaging non existant users
+* Reading messages from ChatBot both in private messages and in #112Test
+* Sending general commands like LIST, MOTD, HELP, JOIN, PART, INFO, PRIVMSG
+
+I am not confident in the testing of my program because the program got large enough that there were too many parts to efficiently test it in the given time.
+
+If I wanted to be confident in the testing of my program, I would have to test each feature fully whenever I changed something, because changing one thing can have unforseen consequences on other things. This could be done with a larger team, more time, or some form of automated testing.
+
+It would also improve testing if I was testing the program on a test IRC server that I have control over. This would allow me to check how the client handles invalid data, automate testing, and artifically generate many different errors or server replies.
